@@ -1,0 +1,33 @@
+GET http://localhost:5050/posts
+
+#######
+
+GET http://localhost:5050/posts/bytitle/post1
+
+#######
+
+POST http://localhost:5050/posts HTTP/1.1
+content-type: application/json
+
+{
+    "title": "post17",
+    "author": "autore12",
+    "content": "Love isn't always on time, love isn't always on time, oh oh oh"
+}
+
+#######
+
+PATCH http://localhost:5050/posts/646bb0c33a75914c60881419 HTTP/1.1
+content-type: application/json
+
+{
+    "title": "modificato",
+    "author": "epicode@epicode.it",
+    "content": "ciao Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet."
+}
+
+#######
+
+DELETE http://localhost:5050/posts/6478e0e099e13c1a5a5a6805 HTTP/1.1
+
+#######

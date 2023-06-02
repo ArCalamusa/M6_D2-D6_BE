@@ -1,0 +1,26 @@
+GET http://localhost:5050/users
+
+#######
+
+POST http://localhost:5050/users HTTP/1.1
+content-type: application/json
+
+{
+    "userName": "test16",
+    "email": "test16C@epicode.it",
+    "password": "epicode1"
+}
+
+#######
+
+POST http://localhost:5050/login HTTP/1.1
+content-type: application/json
+
+{
+    "email": "epicode2@epicode.it",
+    "password": "epicode"
+}
+
+#######
+
+DELETE http://localhost:5050/users/647630f44de3a9595cc770ca HTTP/1.1
